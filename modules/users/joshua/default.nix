@@ -10,6 +10,8 @@
       home = "/home/joshua";
       shell = pkgs.zsh;
     };
+
+    home-manager.users."joshua" = self.homeModules."user-joshua";
   };
 }
 
