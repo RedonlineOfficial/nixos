@@ -93,18 +93,6 @@
     };
     programs.zsh.enable = true;
 
-    # Users
-    users.users."joshua" = {
-      description = "Joshua Myers";
-      name = "joshua";
-      createHome = true;
-      isNormalUser = true;
-      extraGroups = [ "wheel" "networkmanager" ];
-      initialPassword = "changeme";
-      home = "/home/joshua";
-      shell = pkgs.zsh;
-    };
-
     # State Version - DO NOT CHANGE THIS EVER!!!!!!!!1!1
     system.stateVersion = "26.05";
   };
