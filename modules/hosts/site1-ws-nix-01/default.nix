@@ -2,6 +2,7 @@
   flake.nixosConfigurations."site1-ws-nix-01" = inputs.nixpkgs.lib.nixosSystem {
     system = "x86_64-linux";
     modules = [
+      self.nixosModules."common"
       inputs.disko.nixosModules.disko
       self.nixosModules.disko_efi-2disk-luks-split-home
       self.nixosModules."site1-ws-nix-01"
